@@ -6,26 +6,26 @@ function NotesContext({children}) {
             {
                 title: 'Feedbacks',
                 body: "Lorem ipsum dolor sit amet consectetur",
-                editIcon: 'src/image/edit.svg',
+                editIcon: '../image/edit.svg',
                 deleteIcon: 'src/image/delete.svg',
                 date: "5 days ago"
             },
             {
                 title: 'Feedbacks',
                 body: "Lorem ipsum dolor sit amet consectetur",
-                editIcon: 'src/image/edit.svg',
+                editIcon: '../image/edit.svg',
                 deleteIcon: 'src/image/delete.svg',
                 date: "5 days ago"
             }, {
                 title: 'Feedbacks',
                 body: "Lorem ipsum dolor sit amet consectetur",
-                editIcon: 'src/image/edit.svg',
+                editIcon: '../image/edit.svg',
                 deleteIcon: 'src/image/delete.svg',
                 date: "5 days ago"
             }, {
                 title: 'Feedbacks',
                 body: "Lorem ipsum dolor sit amet consectetur",
-                editIcon: 'src/image/edit.svg',
+                editIcon: '../image/edit.svg',
                 deleteIcon: 'src/image/delete.svg',
                 date: "5 days ago"
             },
