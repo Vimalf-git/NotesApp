@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import NotesCard from './NotesCard'
 import { Button } from 'react-bootstrap'
 import { NotesDataContext } from './NotesContext'
+import notesIcon from '../image/description.svg'
 
 function NotesContent() {
     const [title, SetTittle] = useState('')
@@ -43,7 +44,7 @@ function NotesContent() {
 
                 <div className='notes-fetch-Main'>
                     <div className='notes-fetch'>
-                        <img src='../image/notes-blueIcon.svg' />
+                        <img src={notesIcon}/>
                         <span style={{ color: "#203562", fontSize: '1.5em' }}>My Notes</span>
                     </div>
                     <h4 style={{ color: '#677898', marginLeft: '1.5em' }}>Recently viewed</h4>
