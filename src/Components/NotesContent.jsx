@@ -46,9 +46,9 @@ function NotesContent() {
                         <img src='src/image/notes-blueIcon.svg' />
                         <span style={{ color: "#203562", fontSize: '1.5em' }}>My Notes</span>
                     </div>
-                    <h4 style={{ color: '#203562', marginLeft: '1.5em' }}>Recently viewed</h4>
+                    <h4 style={{ color: '#677898', marginLeft: '1.5em' }}>Recently viewed</h4>
                     <div className='notesCard'>
-                        <NotesCard  />
+                        <NotesCard isProb={true} />
                     </div>
                 </div>
             </div>

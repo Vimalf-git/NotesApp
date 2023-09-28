@@ -8,7 +8,7 @@ function Sidebar() {
             <div className='sidebar'>
 
                 <h1 style={{ color: "#203562" }}>Notes App</h1>
-                <Link className='side-b-btn' to={'noteslist'} >
+                <Link className='side-b-btn' to={'notesCard'} >
                     <img style={{ marginLeft: '1em' }} src='src/image/description.svg' />
                     <span>Notes</span>
                 </Link>

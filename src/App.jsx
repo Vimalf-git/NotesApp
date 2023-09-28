@@ -4,6 +4,7 @@ import Sidebar from './Components/Sidebar'
 import NotesContent from './Components/NotesContent'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NotesContext from './Components/Context/NotesContext'
+import NotesCard from './Components/NotesCard'
 
 function App() {
 
@@ -11,12 +12,19 @@ function App() {
     <>
       <div className='mainSetUp'>
         <BrowserRouter>
-          <Sidebar />
           <Routes>
             <Route path='*' element={
               <NotesContext>
+                          <Sidebar />
                 <NotesContent />
               </NotesContext>} />
+            <Route path='notesCard' element={
+              <NotesContext>
+                          <Sidebar />
+
+                <NotesCard />
+              </NotesContext>
+            } />
           </Routes>
         </BrowserRouter>
       </div>
