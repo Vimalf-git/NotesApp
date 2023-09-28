@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import NotesCard from './NotesCard'
 import { Button } from 'react-bootstrap'
 import { NotesDataContext } from './NotesContext'
-import notesIcon from '../image/description.svg'
+import notesIcon from '../image/notes-blueIcon.svg'
 
 function NotesContent() {
     const [title, SetTittle] = useState('')
