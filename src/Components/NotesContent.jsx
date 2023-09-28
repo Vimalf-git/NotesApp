@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import NotesCard from './NotesCard'
 import { Button } from 'react-bootstrap'
-import { NotesDataContext } from './Context/NotesContext'
+import { NotesDataContext } from './NotesContext'
 
 function NotesContent() {
     const [title, SetTittle] = useState('')

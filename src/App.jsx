@@ -3,7 +3,7 @@ import './App.css'
 import Sidebar from './Components/Sidebar'
 import NotesContent from './Components/NotesContent'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import NotesContext from './Components/Context/NotesContext'
+import NotesContext from './Components/NotesContext'
 import NotesCard from './Components/NotesCard'
 
 function App() {

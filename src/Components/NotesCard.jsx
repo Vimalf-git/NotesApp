@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { NotesDataContext } from './Context/NotesContext';
+import { NotesDataContext } from './NotesContext';
 
 function NotesCard({isProb}) {
     const { data, setData } = useContext(NotesDataContext);

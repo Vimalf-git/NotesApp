@@ -154,6 +154,7 @@ textarea::placeholder{
   height: auto;
   display: flex;  
   flex-wrap: wrap;
+  margin-top: 1.5em;
   /* flex-direction: column; */
   justify-content: center;
   /* background-color:#a4bbec34; */
