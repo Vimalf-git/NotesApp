@@ -56,7 +56,6 @@
   display: flex;
   justify-content: center;
   margin-top: 2em;
-  /* background-color: aqua; */
 }
 .add-btn{
   width: 10%;
@@ -71,7 +70,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* margin-top: 2em;   */
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
   border-radius: 8px;
@@ -137,27 +135,18 @@ textarea::placeholder{
   width: 100%;
   height: auto;
   display: flex;
-  /* justify-content: space-between; */
   gap: 1em;
   flex-wrap: wrap;
   margin-left: 2em;
   margin-bottom: 2em;
-  /* background-color: black; */
 }
 .card-data-toggle{
-  /* width: 100%;
-  display: flex;
-  gap: 1em;
-  justify-content: center;
-  margin-top: 1.5em; */
   width: 80%;
   height: auto;
   display: flex;  
   flex-wrap: wrap;
   margin-top: 1.5em;
-  /* flex-direction: column; */
   justify-content: center;
-  /* background-color:#a4bbec34; */
   gap: 1em;
 }
 .notesCardcomponent{
@@ -169,7 +158,6 @@ textarea::placeholder{
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: #fff;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -186,11 +174,9 @@ textarea::placeholder{
 }
 .card-body{
   width: 90%;
-  /* height: auto; */
   display: flex;
   text-align: left;
-  /* justify-content:center; */
-  /* background-color: aqua; */
+  
 }
 @media(max-width:800px){
   .mainSetUp{
@@ -199,11 +185,9 @@ textarea::placeholder{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    /* background-color: aqua; */
   }
   .sidebar{
     width: 800px;
-    /* background-color: black; */
   }
   .side-b-btn{
   width: 30%;
@@ -212,38 +196,18 @@ textarea::placeholder{
   }
   .noteCon{
     width: 800px;
-/* background-color: blue; */
   }
   .add-btn{
     width: 20%;
   }
-}
-
-
-/* @media(max-width:500px){
-  /* .mainSetUp{
+  .card-data-toggle{
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
+    display: flex;  
+    flex-wrap: wrap;
+    margin-top: 2em;
+    justify-content: center;
     gap: 1em;
-    background-color: aqua;
-  } */
-  /* .sidebar{
-    width: 510px;
-    background-color: black;
-  } */
-  /* .side-b-btn{
-  width: 30%;
-  display: flex;
-  align-items: center;
-  } */
-  /* .noteCon{
-    width: 510px; */
-/* background-color: blue; */
-  /* } */
-  /* .add-btn{
-    width: 20%;
-  } */ 
-/* } */
-
+  }
+  
+}
