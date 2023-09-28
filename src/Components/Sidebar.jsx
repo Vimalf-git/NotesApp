@@ -9,7 +9,7 @@ function Sidebar() {
 
                 <h1 style={{ color: "#203562" }}>Notes App</h1>
                 <Link className='side-b-btn' to={'notesCard'} >
-                    <img style={{ marginLeft: '1em' }} src='src/image/description.svg' />
+                    <img style={{ marginLeft: '1em' }} src='../image/description.svg' />
                     <span>Notes</span>
                 </Link>
             </div>
