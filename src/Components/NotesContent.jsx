@@ -2,11 +2,11 @@ import React, { useContext, useState } from 'react'
 import NotesCard from './NotesCard'
 import { Button } from 'react-bootstrap'
 import { NotesDataContext } from './NotesContext'
-import notesBlueIcon from '../image/notes-blueIcon.svg' 
 
 function NotesContent() {
     const { data, setData,title,SetTittle,body,SetBody,
-        addOrEdit ,setAddOrEdit,editIndex} =useContext(NotesDataContext);
+        addOrEdit ,setAddOrEdit,editIndex
+        ,editIcon,deleteIcon,notesBlueIcon} =useContext(NotesDataContext);
 
     const addData = () => {
         if(addOrEdit==='add'){
@@ -17,8 +17,8 @@ function NotesContent() {
             newDataVal.push({
                 title,
                 body,
-                editIcon: 'src/image/edit.svg',
-                deleteIcon: 'src/image/delete.svg',
+                editIcon:editIcon,
+                deleteIcon: deleteIcon,
                 date: "5 days ago"
             })
             setData(newDataVal);
@@ -30,8 +30,8 @@ function NotesContent() {
             newEditVal.splice(editIndex,1,{
                 title,
                 body,
-                editIcon: 'src/image/edit.svg',
-                deleteIcon: 'src/image/delete.svg',
+                editIcon: editIcon,
+                deleteIcon: editIcon,
                 date: "5 days ago"
             })
             setData(newEditVal);

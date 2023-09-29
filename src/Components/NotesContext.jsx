@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import deleteIcon from '../image/delete.svg'
 import editIcon from '../image/edit.svg'
+import notesBlueIcon from '../image/notes-blueIcon.svg' 
+import { useNavigate } from 'react-router-dom';
 export const NotesDataContext = React.createContext();
 function NotesContext({ children }) {
     const [data, setData] = useState(
@@ -37,10 +39,12 @@ function NotesContext({ children }) {
     const [body, SetBody] = useState('')
     const [addOrEdit, setAddOrEdit] = useState('add');
     const [editIndex,setEditindex]=useState();
+    const navigate=useNavigate();
     return (
         <NotesDataContext.Provider value=
         {{ data, setData, title, SetTittle, body, 
-        SetBody, addOrEdit ,setAddOrEdit,editIndex,setEditindex}}>
+        SetBody, addOrEdit ,setAddOrEdit,editIndex
+        ,setEditindex,navigate,deleteIcon,editIcon,notesBlueIcon}}>
             {children}
         </NotesDataContext.Provider>
     )
