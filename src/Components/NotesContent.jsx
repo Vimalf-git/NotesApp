@@ -31,7 +31,7 @@ function NotesContent() {
                 title,
                 body,
                 editIcon: editIcon,
-                deleteIcon: editIcon,
+                deleteIcon: deleteIcon,
                 date: "5 days ago"
             })
             setData(newEditVal);
