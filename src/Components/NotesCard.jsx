@@ -2,11 +2,17 @@ import React, { useContext } from 'react'
 import { NotesDataContext } from './NotesContext';
 
 function NotesCard({isProb}) {
-    const { data, setData } = useContext(NotesDataContext);
+    const { data, setData,SetTittle,SetBody,setEditindex ,setAddOrEdit } = useContext(NotesDataContext);
     const delData=(index)=>{
         const newValData=[...data];
         newValData.splice(index,1);
         setData(newValData);
+    }
+    const editData=(index)=>{
+        SetTittle(data[index].title)
+        SetBody(data[index].body)
+        setAddOrEdit('edit')
+        setEditindex(index)
     }
     return (
         <>{
@@ -19,7 +25,7 @@ function NotesCard({isProb}) {
                                     <h4>{e.title}</h4>
                                 </div>
                                 <div className='actionIcon'>
-                                    <img src={e.editIcon} />
+                                    <img src={e.editIcon} onClick={()=>{editData(i)}}/>
                                     <img src={e.deleteIcon} onClick={()=>{delData(i)}}/>
                                 </div>
                             </div>

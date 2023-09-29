@@ -5,12 +5,12 @@ import { NotesDataContext } from './NotesContext'
 import notesBlueIcon from '../image/notes-blueIcon.svg' 
 
 function NotesContent() {
-    const [title, SetTittle] = useState('')
-    const [body, SetBody] = useState('')
-    const { data, setData } = useContext(NotesDataContext);
+    const { data, setData,title,SetTittle,body,SetBody,
+        addOrEdit ,setAddOrEdit,editIndex} =useContext(NotesDataContext);
 
     const addData = () => {
-        const newDataVal = [...data];
+        if(addOrEdit==='add'){
+            const newDataVal = [...data];
         if (title === '' || body === '') {
             alert("please fill the note")
         } else {
@@ -22,10 +22,25 @@ function NotesContent() {
                 date: "5 days ago"
             })
             setData(newDataVal);
-
             SetTittle('');
             SetBody('');
         }
+        }else{
+            const newEditVal=[...data];
+            newEditVal.splice(editIndex,1,{
+                title,
+                body,
+                editIcon: 'src/image/edit.svg',
+                deleteIcon: 'src/image/delete.svg',
+                date: "5 days ago"
+            })
+            setData(newEditVal);
+            SetTittle('');
+            SetBody('');
+            setAddOrEdit('add')
+        }
+        
+
     }
 
     return (
@@ -37,7 +52,7 @@ function NotesContent() {
                         <h4 style={{ color: "#203562", margin: '2em 0em 0em 2em' }}>Add a Note</h4>
                         <input className='notes-in-bx' value={title} placeholder='Title' onChange={(e) => { SetTittle(e.target.value) }} />
                         <textarea className='notes-txt-bx' value={body} placeholder='Take a note...' onChange={(e) => { SetBody(e.target.value) }}></textarea>
-                        <Button className='add-btn' onClick={() => { addData() }}>+ADD</Button>
+                        <Button className='add-btn' onClick={() => { addData() }}>{addOrEdit=='add'?"+ADD":"Update"}</Button>
                     </div>
                 </div>
 
