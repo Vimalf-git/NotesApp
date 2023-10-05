@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import deleteIcon from './Redux/image/delete.svg'
-import editIcon from './Redux/image/edit.svg'
-import notesBlueIcon from './Redux/image/notes-blueIcon.svg' 
+import deleteIcon from '../image/delete.svg'
+import editIcon from '../image/edit.svg'
+import notesBlueIcon from '../image/notes-blueIcon.svg' 
 import { useNavigate } from 'react-router-dom';
 export const NotesDataContext = React.createContext();
 function NotesContext({ children }) {
