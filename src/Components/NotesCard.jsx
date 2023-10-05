@@ -58,8 +58,8 @@ function NotesCard({isProb=false}) {
                                     <h4>{e.title}</h4>
                                 </div>
                                 <div className='actionIcon'>
-                                    <img src={e.editIcon} onClick={()=>{editData(i)}} />
-                                    <img src={e.deleteIcon} onClick={()=>{delData(i)}}/>
+                                    <img src={e.editIcon}  style={{cursor: 'pointer'}} onClick={()=>{editData(i)}} />
+                                    <img src={e.deleteIcon}style={{cursor: 'pointer'}} onClick={()=>{delData(i)}}/>
                                 </div>
                             </div>
                             <div className='card-body'>
