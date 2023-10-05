@@ -20,19 +20,7 @@ function NotesContext({ children }) {
                 editIcon: editIcon,
                 deleteIcon: deleteIcon,
                 date: "5 days ago"
-            }, {
-                title: 'Feedbacks',
-                body: "Lorem ipsum dolor sit amet consectetur",
-                editIcon: editIcon,
-                deleteIcon: deleteIcon,
-                date: "5 days ago"
-            }, {
-                title: 'Feedbacks',
-                body: "Lorem ipsum dolor sit amet consectetur",
-                editIcon: editIcon,
-                deleteIcon: deleteIcon,
-                date: "5 days ago"
-            },
+            }
         ])
 
     const [title, SetTittle] = useState('')
