@@ -42,7 +42,6 @@ function NotesContent() {
         
 
     }
-
     return (
         <>
             <div className='noteCon'>
@@ -72,4 +71,4 @@ function NotesContent() {
     )
 }
 
-export default NotesContent
+export default NotesContent 
